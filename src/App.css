@@ -1,38 +1,41 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap");
+
+body {
+  font-family: "Bitter", serif;
+  background: #ebeff5;
+}
+
+.bg-green {
+  background-color: #ff686b;
+}
+
+.initial {
+  padding: 8px 8px;
+  width: 50px;
+  background: #a5ffd6;
+  color: #ff686b !important;
+  border: none;
+  border-radius: 40px;
   text-align: center;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-icon {
+  font-size: 1.6rem;
+  margin: 0.2rem 0;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+  background-color: white;
+  padding: 2rem 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+article {
+  background: white;
+  padding: 1rem 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blog-link:hover {
+  text-decoration: none;
 }
