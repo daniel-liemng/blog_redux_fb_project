@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap');
 
 body {
-  font-family: "Bitter", serif;
+  font-family: 'Bitter', serif;
   background: #ebeff5;
 }
 
@@ -10,8 +10,8 @@ body {
 }
 
 .initial {
-  padding: 8px 8px;
-  width: 50px;
+  padding: 8px 10px;
+  width: 100%;
   background: #a5ffd6;
   color: #ff686b !important;
   border: none;
@@ -34,8 +34,34 @@ form {
 article {
   background: white;
   padding: 1rem 2rem;
+  box-shadow: 3px 3px 2px 3px #888888;
+}
+
+article:hover {
+  box-shadow: 5px 5px 2px 3px #7a7770;
 }
 
 .blog-link:hover {
   text-decoration: none;
+}
+
+.card {
+  border-radius: 0 !important;
+  background: white !important;
+}
+
+.text-pink {
+  color: #ff686b;
+}
+
+.btn {
+  background-color: #ff686b;
+  color: white;
+  border: none;
+  border-radius: 0;
+}
+
+.btn:hover {
+  background: coral;
+  color: white;
 }

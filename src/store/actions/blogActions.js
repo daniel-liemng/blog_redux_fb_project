@@ -2,13 +2,15 @@ export const createBlog = blog => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
     // make async call to DB - Firestore
     const firestore = getFirestore();
+    // get profile from firebase state
+    const profile = getState().firebase.profile;
+    const authorId = getState().firebase.auth.uid;
     firestore
       .collection("blogs")
       .add({
         ...blog,
-        authorFirstName: "Liem",
-        authorLastName: "Nguyen",
-        authorId: 12345,
+        authorUsername: profile.username,
+        authorId,
         createdAt: new Date()
       })
       .then(() => {
